@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Suppliers</title>
+	</head>
+	<body>
+		<div class="container">
+			<div id="suppliers">
+				<h1>Forhandlere</h1>
+				<div id="supplier-row">
+					<div id="suppliers-categories">
+						<div class="supplier-search">
+							<input type="text" v-model="search" />
+						</div>
+						<div
+							:class="{active: !search.length && activeCategory == 'Alle'}"
+							class="supplier"
+						>
+							<button @click="activeCategory = 'Alle'">
+								Alle
+							</button>
+						</div>
+						<div
+							v-for="supplier in suppliers"
+							:class="{active: !search.length && activeCategory == supplier.categoryName}"
+							class="supplier"
+						>
+							<button
+								@click="activeCategory = supplier.categoryName"
+							>
+								{{ supplier.categoryName }}
+							</button>
+						</div>
+					</div>
+					<div id="suppliers-list">
+						<h3>{{ search.length ? search : activeCategory }}</h3>
+						<div
+							v-for="supplier in activeSuppliers"
+							:key="supplier.key"
+							class="supplier"
+						>
+							<span class="img-holder">
+								<img
+									:src="supplier.img"
+									:alt="supplier.name + ' logo'"
+								/>
+							</span>
+							<span class="name">
+								{{ supplier.name }}
+							</span>
+							<a
+								:href="supplier.url"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="url"
+								>Gå til nettside</a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<script src="suppliers.js"></script>
+		<script src="suppliers-script.js"></script>
+	</body>
+</html>
