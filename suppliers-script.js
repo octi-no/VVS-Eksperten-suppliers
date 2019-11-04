@@ -1,24 +1,18 @@
 var suppliersVm = new Vue({
-	el: '#suppliers',
+	el: '#suppliers-app',
 	data: function() {
 		return {
 			suppliers: suppliers,
 			activeCategory: suppliers[0].categoryName,
-			search: ''
-		};
+			search: '',
+			listType: 'cards'
+		}
 	},
 	mounted: function() {
-		this.setSupplier();
-		this.setKeys();
+		this.setKeys()
+		this.combineSuppliersInAll()
 	},
 	methods: {
-		setSupplier: function() {
-			var url = new URL(location.href);
-			var searchParams = new URLSearchParams(url.search);
-			if (searchParams.has('supplier')) {
-				this.activeCategory = searchParams.get('supplier');
-			}
-		},
 		setKeys: function() {
 			this.suppliers = this.suppliers.map(function(category) {
 				category.items = category.items.map(function(supplier) {
@@ -26,44 +20,51 @@ var suppliersVm = new Vue({
 						'key' +
 						Math.random()
 							.toString(36)
-							.substr(2, 9);
-					return supplier;
-				});
-				return category;
-			});
+							.substr(2, 9)
+					return supplier
+				})
+				return category
+			})
+		},
+		combineSuppliersInAll: function() {
+			this.suppliers[0].items = _.uniqWith(this.allSuppliers, function(
+				arrVal,
+				othVal
+			) {
+				return arrVal.name == othVal.name
+			})
 		}
 	},
 	computed: {
 		allSuppliers: function() {
 			return this.suppliers.reduce(function(accumulator, category) {
-				accumulator = [...accumulator, ...category.items];
-				return accumulator;
-			}, []);
+				return $.merge(accumulator, category.items)
+			}, [])
 		},
 		activeSuppliers: function() {
-			var that = this;
+			var that = this
 			if (this.search != '') {
 				var all = _.uniqWith(this.allSuppliers, function(
 					arrVal,
 					othVal
 				) {
-					return arrVal.name == othVal.name;
-				});
+					return arrVal.name == othVal.name
+				})
 				return all.filter(function(element) {
 					return _.includes(
 						element.name.toLowerCase(),
 						that.search.toLowerCase()
-					);
-				});
+					)
+				})
 			}
-			if (this.activeCategory == 'Alle') {
-				return _.uniqWith(this.allSuppliers, function(arrVal, othVal) {
-					return arrVal.name == othVal.name;
-				});
-			}
-			return this.suppliers.find(function(supplier) {
-				return supplier.categoryName == that.activeCategory;
-			}).items;
+			return this.suppliers.filter(function(supplier) {
+				return supplier.categoryName == that.activeCategory
+			})[0].items
+		},
+		suppliersAmount: function() {
+			return this.suppliers.reduce(function(accumulator, supplier) {
+				return accumulator + supplier.items.length
+			}, 0)
 		}
 	}
-});
+})

@@ -1,5 +1,9 @@
 var suppliers = [
 	{
+		categoryName: 'Alle',
+		items: []
+	},
+	{
 		categoryName: 'Badekar',
 		items: [
 			{
@@ -52,7 +56,7 @@ var suppliers = [
 				url: 'http://www.interform.no/'
 			},
 			{
-				name: 'Porsgrundbad',
+				name: 'Porsgrund',
 				img:
 					'https://files.solvecms.com/test/7311e68/xlarge/b86aafe4-f9c2-4176-a5be-4eb4154293b9.jpg?v=1570714559320',
 				url: 'http://www.porsgrundbad.no/'
@@ -210,7 +214,7 @@ var suppliers = [
 				url: 'https://www.coram.no'
 			},
 			{
-				name: 'Holtannormark',
+				name: 'Holtan Normark',
 				img:
 					'https://files.solvecms.com/test/7311e68/xlarge/Holtan-Normark-logo-dark-01.png?v=1570784922862',
 				url: 'http://holtannormark.no/'
@@ -323,7 +327,7 @@ var suppliers = [
 				url: 'https://www.inr.no/'
 			},
 			{
-				name: 'Porsgrundbad',
+				name: 'Porsgrund',
 				img:
 					'https://files.solvecms.com/test/7311e68/xlarge/b86aafe4-f9c2-4176-a5be-4eb4154293b9.jpg?v=1570714559320',
 				url: 'http://www.porsgrundbad.no/'
@@ -332,7 +336,7 @@ var suppliers = [
 				name: 'Vikingbad',
 				img:
 					'https://files.solvecms.com/test/7311e68/xlarge/vikingbad.jpg?v=1570714600226',
-				url: 'https://www.porsgrundbad.no/'
+				url: 'https://www.vikingbad.no/'
 			},
 			{
 				name: 'Macro Design',
@@ -477,7 +481,7 @@ var suppliers = [
 				url: 'https://www.korsbakken.no/'
 			},
 			{
-				name: 'Porsgrundbad',
+				name: 'Porsgrund',
 				img:
 					'https://files.solvecms.com/test/7311e68/xlarge/b86aafe4-f9c2-4176-a5be-4eb4154293b9.jpg?v=1570714559320',
 				url: 'http://www.porsgrundbad.no/'
@@ -699,7 +703,7 @@ var suppliers = [
 				url: 'https://www.lksystems.no/no/'
 			},
 			{
-				name: 'isiflo',
+				name: 'Isiflo',
 				img:
 					'https://files.solvecms.com/test/7311e68/xlarge/isiflo%20(2).jpg?v=1570793572641',
 				url: 'https://isiflo.no/'
@@ -740,7 +744,7 @@ var suppliers = [
 				url: 'https://www.geberit.no/no/'
 			},
 			{
-				name: 'Puris',
+				name: 'Purus',
 				img:
 					'https://files.solvecms.com/test/7311e68/puris.svg?v=1570796177083',
 				url: 'https://www.purus.no/'
@@ -795,7 +799,7 @@ var suppliers = [
 				url: 'https://www.korsbakken.no/'
 			},
 			{
-				name: 'Porsgrundbad',
+				name: 'Porsgrund',
 				img:
 					'https://files.solvecms.com/test/7311e68/xlarge/b86aafe4-f9c2-4176-a5be-4eb4154293b9.jpg?v=1570714559320',
 				url: 'http://www.porsgrundbad.no/'
@@ -889,6 +893,12 @@ var suppliers = [
 				img:
 					'https://files.solvecms.com/test/7311e68/xlarge/Armaturjonsson%20(1).jpg?v=1570791318120',
 				url: 'https://www.armaturjonsson.no/Produkter'
+			},
+			{
+				name: 'Watercontrol',
+				img:
+					'https://files.solvecms.com/test/7311e68/xlarge/watercontrol%20logo.jpg?v=1572601358302',
+				url: 'https://www.watercontrol.no/'
 			}
 		]
 	},
@@ -1021,7 +1031,7 @@ var suppliers = [
 				url: 'https://www.relekta.no/'
 			},
 			{
-				name: 'isiflo',
+				name: 'Isiflo',
 				img:
 					'https://files.solvecms.com/test/7311e68/xlarge/isiflo%20(2).jpg?v=1570793572641',
 				url: 'https://isiflo.no/'
@@ -1125,4 +1135,4 @@ var suppliers = [
 			}
 		]
 	}
-];
+]
