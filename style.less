@@ -83,7 +83,8 @@ img {
 			font-size: 18px;
 			line-height: 1em;
 			background-image: url(https://files.solvecms.com/test/0b25ef8/magnify.svg?v=1509015183706);
-			background-position: top right 4px;
+			// background-position: top right 4px;
+			background-position: right center;
 			background-repeat: no-repeat;
 		}
 	}
@@ -195,6 +196,17 @@ img {
 		grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 		grid-gap: 10px;
 		.supplier {
+			float: left;
+			width: 33.2%;
+			margin-left: -1px;
+			margin-bottom: -1px;
+			@supports (object-fit: cover) {
+				float: none;
+				width: auto;
+				margin-left: 0;
+				margin-bottom: 0;
+			}
+
 			display: flex;
 			flex-direction: column;
 			align-items: center;
@@ -223,10 +235,14 @@ img {
 		height: 60px;
 		vertical-align: middle;
 		margin-right: 15px;
+		text-align: center;
 		img {
-			width: 100%;
-			height: 100%;
-			object-fit: contain;
+			max-height: 100%;
+			@supports (object-fit: cover) {
+				width: 100%;
+				height: 100%;
+				object-fit: contain;
+			}
 		}
 	}
 }
