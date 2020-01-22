@@ -1,3 +1,4 @@
+<script>
 var suppliers = [
 	{
 		categoryName: 'Alle',
@@ -17,7 +18,14 @@ var suppliers = [
 				img:
 					'https://files.solvecms.com/test/7311e68/xlarge/Villeroy-&-Boch.jpg?v=1570713517506',
 				url:
-					'https://www.villeroy-boch.no/bathroom-and-wellness/categories/baths.html'
+					'https://pro.villeroy-boch.com/en/no/bathroom-and-wellness/products/bathroom-collections.html'
+			},
+			{
+				name: 'Boco Europe AS',
+				img:
+					'https://files.solvecms.com/test/7311e68/Boco-liten.jpg?v=1579012353174',
+				url:
+					'https://www.boco.no/'
 			},
 			{
 				name: 'Laufen',
@@ -29,7 +37,7 @@ var suppliers = [
 				name: 'Gustavsberg',
 				img:
 					'https://files.solvecms.com/test/7311e68/xlarge/c88dade3-a904-483b-b086-339c9f41072f.jpg?v=1570713929768',
-				url: 'https://www.gustavsberg.com/no/produkter/badekar/'
+				url: 'https://www.gustavsberg.com/no/'
 			},
 			{
 				name: 'Axor',
@@ -116,6 +124,18 @@ var suppliers = [
 				url: 'https://www.laufen.no/'
 			},
 			{
+				name: 'Foss Fabrikker',
+				img:
+					'https://files.solvecms.com/test/7311e68/foss-fabrikker.svg?v=1578318589074',
+				url: 'https://www.fossfabrikker.no/'
+			},
+			{
+				name: 'Vedum',
+				img:
+					'https://files.solvecms.com/test/7311e68/xlarge/Vedum.png?v=1578473551120',
+				url: 'https://www.vedum.no/'
+			},
+			{
 				name: 'Duravit',
 				img:
 					'https://files.solvecms.com/test/7311e68/xlarge/4041214b-a931-42ec-ba52-f8526bcc8fd9.jpg?v=1570713976007',
@@ -132,7 +152,7 @@ var suppliers = [
 				name: 'Gustavsberg',
 				img:
 					'https://files.solvecms.com/test/7311e68/xlarge/c88dade3-a904-483b-b086-339c9f41072f.jpg?v=1570713929768',
-				url: 'https://www.gustavsberg.com/no/produkter/baderomsmobler/'
+				url: 'https://www.gustavsberg.com/no/'
 			},
 			{
 				name: 'Hafa Bathroom Group',
@@ -169,7 +189,7 @@ var suppliers = [
 				img:
 					'https://files.solvecms.com/test/7311e68/xlarge/Villeroy-&-Boch.jpg?v=1570713517506',
 				url:
-					'https://www.villeroy-boch.no/bathroom-and-wellness/categories/bathroom-furniture.html'
+					'https://pro.villeroy-boch.com/en/no/bathroom-and-wellness/products/bathroom-collections.html'
 			},
 			{
 				name: 'INR',
@@ -231,6 +251,12 @@ var suppliers = [
 				url: 'http://www.duravit.no/'
 			},
 			{
+				name: 'Vedum',
+				img:
+					'https://files.solvecms.com/test/7311e68/xlarge/Vedum.png?v=1578473551120',
+				url: 'https://www.vedum.no/'
+			},
+			{
 				name: 'Scala Bad',
 				img:
 					'https://files.solvecms.com/test/7311e68/xlarge/e9ef70d2-6a3c-4ce8-8894-9a335c8e62d1.jpg?v=1570714599981',
@@ -241,6 +267,12 @@ var suppliers = [
 				img:
 					'https://files.solvecms.com/test/7311e68/xlarge/Coram.jpg?v=1557820972510',
 				url: 'https://www.coram.no'
+			},
+			{
+				name: 'Foss Fabrikker',
+				img:
+					'https://files.solvecms.com/test/7311e68/foss-fabrikker.svg?v=1578318589074',
+				url: 'https://www.fossfabrikker.no/'
 			},
 			{
 				name: 'Smedbo',
@@ -294,7 +326,7 @@ var suppliers = [
 				img:
 					'https://files.solvecms.com/test/7311e68/xlarge/Villeroy-&-Boch.jpg?v=1570713517506',
 				url:
-					'https://www.villeroy-boch.no/bathroom-and-wellness/categories/shower-trays.html'
+					'https://pro.villeroy-boch.com/en/no/bathroom-and-wellness/products/bathroom-collections.html'
 			},
 			{
 				name: 'Bergersen Flis',
@@ -306,7 +338,7 @@ var suppliers = [
 				name: 'Gustavsberg',
 				img:
 					'https://files.solvecms.com/test/7311e68/xlarge/c88dade3-a904-483b-b086-339c9f41072f.jpg?v=1570713929768',
-				url: 'https://www.gustavsberg.com/no/produkter/dusj/'
+				url: 'https://www.gustavsberg.com/no/'
 			},
 			{
 				name: 'Korsbakken',
@@ -454,7 +486,7 @@ var suppliers = [
 				name: 'Gustavsberg',
 				img:
 					'https://files.solvecms.com/test/7311e68/xlarge/c88dade3-a904-483b-b086-339c9f41072f.jpg?v=1570713929768',
-				url: 'https://www.gustavsberg.com/no/produkter/toalett/'
+				url: 'https://www.gustavsberg.com/no/'
 			},
 			{
 				name: 'Geberit',
@@ -489,7 +521,7 @@ var suppliers = [
 			{
 				name: 'Pressalit',
 				img:
-					'https://files.solvecms.com/test/7311e68/xlarge/8c09d5a0-72d6-4de6-8af7-79456558fd2d.jpg?v=1570791720902',
+					'https://files.solvecms.com/test/7311e68/Pressalit.svg?v=1579012371983',
 				url: 'https://pressalit.com/da-no/'
 			},
 			{
@@ -497,7 +529,7 @@ var suppliers = [
 				img:
 					'https://files.solvecms.com/test/7311e68/xlarge/Villeroy-&-Boch.jpg?v=1570713517506',
 				url:
-					'https://www.villeroy-boch.no/bathroom-and-wellness/toilets.html'
+					'https://pro.villeroy-boch.com/en/no/bathroom-and-wellness/products/bathroom-collections.html'
 			},
 			{
 				name: 'Duravit',
@@ -557,7 +589,7 @@ var suppliers = [
 				name: 'Gustavsberg',
 				img:
 					'https://files.solvecms.com/test/7311e68/xlarge/c88dade3-a904-483b-b086-339c9f41072f.jpg?v=1570713929768',
-				url: 'https://www.gustavsberg.com/no/produkter/blandebatteri'
+				url: 'https://www.gustavsberg.com/no/'
 			},
 			{
 				name: 'Hansgrohe',
@@ -618,6 +650,12 @@ var suppliers = [
 	{
 		categoryName: 'Pumper, kule- og reguleringsventiler',
 		items: [
+			{
+				name: 'Vedum',
+				img:
+					'https://files.solvecms.com/test/7311e68/xlarge/Vedum.png?v=1578473551120',
+				url: 'https://www.vedum.no/'
+			},
 			{
 				name: 'O. Berge',
 				img:
@@ -750,6 +788,12 @@ var suppliers = [
 				url: 'https://www.purus.no/'
 			},
 			{
+				name: 'Unidrain (BLS Norge)',
+				img:
+					'https://files.solvecms.com/test/7311e68/unidrain-liten.jpg?v=1579012763221',
+				url: 'https://www.unidrain.no/'
+			},
+			{
 				name: 'Tece',
 				img:
 					'https://files.solvecms.com/test/7311e68/logo_tece_rgb_ohneClaim.svg?v=1570793405968',
@@ -772,13 +816,19 @@ var suppliers = [
 				img:
 					'https://files.solvecms.com/test/7311e68/xlarge/c88dade3-a904-483b-b086-339c9f41072f.jpg?v=1570713929768',
 				url:
-					'https://www.gustavsberg.com/no/produkter/servant-handvask/'
+					'https://www.gustavsberg.com/no/'
 			},
 			{
 				name: 'Hansgrohe',
 				img:
 					'https://files.solvecms.com/test/7311e68/Hansgrohe-Logo-2.svg?v=1570792434114',
 				url: 'https://www.hansgrohe.no/'
+			},
+			{
+				name: 'Vedum',
+				img:
+					'https://files.solvecms.com/test/7311e68/xlarge/Vedum.png?v=1578473551120',
+				url: 'https://www.vedum.no/'
 			},
 			{
 				name: 'Intra',
@@ -809,7 +859,7 @@ var suppliers = [
 				img:
 					'https://files.solvecms.com/test/7311e68/xlarge/Villeroy-&-Boch.jpg?v=1570713517506',
 				url:
-					'https://www.villeroy-boch.no/bathroom-and-wellness/categories/baths.html'
+					'https://pro.villeroy-boch.com/en/no/bathroom-and-wellness/products/bathroom-collections.html'
 			},
 			{
 				name: 'Laufen',
@@ -936,12 +986,6 @@ var suppliers = [
 				url: 'https://www.toshibavarmepumper.no/'
 			},
 			{
-				name: 'Panasonic Varmepumper',
-				img:
-					'https://files.solvecms.com/test/7311e68/Panasonic.svg?v=1570797849643',
-				url: 'https://www.panasonicvarmepumper.no/varmepumper'
-			},
-			{
 				name: 'Bosch',
 				img:
 					'https://files.solvecms.com/test/7311e68/xlarge/logo-bosch-invented-for-life.png?v=1570797905039',
@@ -961,6 +1005,10 @@ var suppliers = [
 				url: 'https://www.nibe.no/'
 			}
 		]
+	},
+	{
+	    categoryName: 'Vannrensing og pumper',
+	    items: []
 	},
 	{
 		categoryName: 'Varmtvannsbereder',
@@ -994,6 +1042,11 @@ var suppliers = [
 	{
 		categoryName: 'Diverse produktleverandører',
 		items: [
+			{
+				name: 'Debe Norge',
+				img: 'https://files.solvecms.com/test/7311e68/debe_logo_Norge-small.jpg?v=1579011783763',
+				url:'http://www.debeflowgroup.com/sv/kontakt/debe-norge/'
+			},
 			{
 				name: 'O. Berge',
 				img:
@@ -1037,12 +1090,6 @@ var suppliers = [
 				url: 'https://isiflo.no/'
 			},
 			{
-				name: 'VVS Prefab',
-				img:
-					'https://files.solvecms.com/test/7311e68/xlarge/logo%20(1).png?v=1570798460656',
-				url: 'http://vvsprefab.no/'
-			},
-			{
 				name: 'IMI Hydronic Engineering',
 				img:
 					'https://files.solvecms.com/test/7311e68/xlarge/imi-hydronic-logo.png?v=1570798530566',
@@ -1076,7 +1123,7 @@ var suppliers = [
 			{
 				name: 'Litex',
 				img:
-					'https://files.solvecms.com/test/7311e68/xlarge/litexss.jpg?v=1570798866600',
+					'https://files.solvecms.com/test/7311e68/Litex-liten.jpg?v=1579012353000',
 				url: 'https://www.litex.no/'
 			},
 			{
@@ -1102,12 +1149,6 @@ var suppliers = [
 				img:
 					'https://files.solvecms.com/test/7311e68/xlarge/optimera1.PNG?v=1570799170864',
 				url: 'https://www.optimera.no/'
-			},
-			{
-				name: 'Tools',
-				img:
-					'https://files.solvecms.com/test/7311e68/tools.svg?v=1570799212603',
-				url: 'https://tools.no/'
 			},
 			{
 				name: 'Cimberio',
@@ -1136,3 +1177,5 @@ var suppliers = [
 		]
 	}
 ]
+
+</script>

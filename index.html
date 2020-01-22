@@ -43,9 +43,8 @@
 									<span class="checkbox">
 										<span class="checkmark"></span>
 									</span>
-									<span class="txt">{{
-										supplier.categoryName
-									}}</span
+									<span class="txt"
+										>{{ supplier.categoryName }}</span
 									><span class="amount">
 										({{ supplier.items.length }})</span
 									>
@@ -57,11 +56,8 @@
 						<div class="row">
 							<div class="col-md-8">
 								<h3>
-									{{
-										search.length
-											? 'Søk: ' + search
-											: activeCategory
-									}}
+									{{ search.length ? 'Søk: ' + search :
+									activeCategory }}
 								</h3>
 							</div>
 							<div class="col-md-4">
@@ -143,14 +139,19 @@
 				</div>
 			</div>
 		</div>
+		<link rel="import" href="suppliers-backup-2020-jan-13.html" />
 		<script
 			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
 			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
 			crossorigin="anonymous"
 		></script>
-		<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-		<script src="suppliers.js"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"
+			integrity="sha256-VeNaFBVDhoX3H+gJ37DpT/nTuZTdjYro9yBruHjVmoQ="
+			crossorigin="anonymous"
+		></script>
+		<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+		<!-- <script src="suppliers.js"></script> -->
 		<script src="suppliers-script.js"></script>
 	</body>
 </html>

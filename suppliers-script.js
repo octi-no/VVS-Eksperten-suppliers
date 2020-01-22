@@ -37,9 +37,14 @@ var suppliersVm = new Vue({
 	},
 	computed: {
 		allSuppliers: function() {
-			return this.suppliers.reduce(function(accumulator, category) {
-				return $.merge(accumulator, category.items)
-			}, [])
+			return this.suppliers
+				.reduce(function(accumulator, category) {
+					return $.merge(accumulator, category.items)
+				}, [])
+				.slice()
+				.sort(function(a, b) {
+					return a.name > b.name ? 1 : -1
+				})
 		},
 		activeSuppliers: function() {
 			var that = this
@@ -50,16 +55,26 @@ var suppliersVm = new Vue({
 				) {
 					return arrVal.name == othVal.name
 				})
-				return all.filter(function(element) {
-					return _.includes(
-						element.name.toLowerCase(),
-						that.search.toLowerCase()
-					)
-				})
+				return all
+					.filter(function(element) {
+						return _.includes(
+							element.name.toLowerCase(),
+							that.search.toLowerCase()
+						)
+					})
+					.slice()
+					.sort(function(a, b) {
+						return a.name > b.name ? 1 : -1
+					})
 			}
-			return this.suppliers.filter(function(supplier) {
-				return supplier.categoryName == that.activeCategory
-			})[0].items
+			return this.suppliers
+				.filter(function(supplier) {
+					return supplier.categoryName == that.activeCategory
+				})[0]
+				.items.slice()
+				.sort(function(a, b) {
+					return a.name > b.name ? 1 : -1
+				})
 		},
 		suppliersAmount: function() {
 			return this.suppliers.reduce(function(accumulator, supplier) {
