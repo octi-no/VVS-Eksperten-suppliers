@@ -1,0 +1,1403 @@
+<script>
+	var suppliers = [
+		{
+			categoryName: 'Alle',
+			items: [],
+		},
+		{
+			categoryName: 'Badekar',
+			items: [
+				{
+					name: 'Villeroy & Boch',
+					img:
+						'https://files.solvecms.com/test/7311e68/Villeroy-&-Boch.jpg?v=1570713517506',
+					url:
+						'https://pro.villeroy-boch.com/en/no/bathroom-and-wellness/products/bathroom-collections.html',
+				},
+				{
+					name: 'Boco Europe AS',
+					img:
+						'https://files.solvecms.com/test/7311e68/Boco-liten.jpg?v=1579012353174',
+					url: 'https://www.boco.no/',
+				},
+				{
+					name: 'Laufen',
+					img:
+						'https://files.solvecms.com/test/7311e68/logo_laufen_standard.png?v=1570713703384',
+					url: 'https://www.laufen.no/',
+				},
+				{
+					name: 'Gustavsberg',
+					img:
+						'https://files.solvecms.com/test/7311e68/c88dade3-a904-483b-b086-339c9f41072f.jpg?v=1570713929768',
+					url: 'https://www.gustavsberg.com/no/',
+				},
+				{
+					name: 'Axor',
+					img:
+						'https://files.solvecms.com/test/7311e68/axor-logo1.svg?v=1579083594677',
+					url: 'https://www.axor-design.com/en-int/index.html',
+				},
+				{
+					name: 'Duravit',
+					img:
+						'https://files.solvecms.com/test/7311e68/duravit.png?v=1579082271072',
+					url: 'http://www.duravit.no/',
+				},
+				{
+					name: 'Ifö',
+					img:
+						'https://files.solvecms.com/test/7311e68/25cd197e-6ffc-480a-9132-d41796ac67de.jpg?v=1570714034070',
+					url: 'https://www.ifosanitar.no/',
+				},
+				{
+					name: 'Interform',
+					img:
+						'https://files.solvecms.com/test/7311e68/logo%20(1).svg?v=1579080251955',
+					url: 'http://www.interform.no/',
+				},
+				{
+					name: 'Porsgrund',
+					img:
+						'https://files.solvecms.com/test/7311e68/porsgrund-logo2.jpg?v=1579082719844',
+					url: 'http://www.porsgrundbad.no/',
+				},
+				{
+					name: 'Vikingbad',
+					img:
+						'https://files.solvecms.com/test/7311e68/vikingbad-logo.svg?v=1579608865908',
+					url: 'http://vikingbad.no',
+				},
+				{
+					name: 'Hafa Bathroom Group',
+					img:
+						'https://files.solvecms.com/test/7311e68/Hafa%20(1).jpg?v=1570714671965',
+					url: 'https://www.hafabg.com/',
+				},
+				{
+					name: 'Svedbergs',
+					img:
+						'https://files.solvecms.com/test/7311e68/svedbergs-logo-liten2.jpg?v=1579083400006',
+					url: 'http://www.svedbergs.no/',
+				},
+				{
+					name: 'Scala Bad',
+					img:
+						'https://files.solvecms.com/test/7311e68/e9ef70d2-6a3c-4ce8-8894-9a335c8e62d1.jpg?v=1570714599981',
+					url: 'https://scalabad.wordpress.com/',
+				},
+				{
+					name: 'Sanipro',
+					img:
+						'https://files.solvecms.com/test/7311e68/sanipro-logo.jpg?v=1579083132293',
+					url: 'https://www.sanipro.no/',
+				},
+				{
+					name: 'Duscholux',
+					img:
+						'https://files.solvecms.com/test/7311e68/duscholux_logo_dark.jpg?v=1570714599609',
+					url: 'https://www.duscholux.com/no/Landing-Page/',
+				},
+				{
+					name: 'Holtan Normark',
+					img:
+						'https://files.solvecms.com/test/7311e68/Holtan-Normark-logo-liten.jpg?v=1579080833203',
+					url: 'http://holtannormark.no/',
+				},
+			],
+		},
+		{
+			categoryName: 'Baderomsmøbler',
+			items: [
+				{
+					name: 'Laufen',
+					img:
+						'https://files.solvecms.com/test/7311e68/logo_laufen_standard.png?v=1570713703384',
+					url: 'https://www.laufen.no/',
+				},
+				{
+					name: 'Foss Fabrikker',
+					img:
+						'https://files.solvecms.com/test/7311e68/foss-fabrikker.svg?v=1578318589074',
+					url: 'https://www.fossfabrikker.no/',
+				},
+				{
+					name: 'Vedum',
+					img:
+						'https://files.solvecms.com/test/7311e68/Vedum.png?v=1578473551120',
+					url: 'https://www.vedum.no/',
+				},
+				{
+					name: 'Boco Europe AS',
+					img:
+						'https://files.solvecms.com/test/7311e68/Boco-liten.jpg?v=1579012353174',
+					url: 'https://www.boco.no/',
+				},
+				{
+					name: 'Duravit',
+					img:
+						'https://files.solvecms.com/test/7311e68/duravit.png?v=1579082271072',
+					url: 'http://www.duravit.no/',
+				},
+				{
+					name: 'Vikingbad',
+					img:
+						'https://files.solvecms.com/test/7311e68/vikingbad-logo.svg?v=1579608865908',
+					url: 'http://vikingbad.no',
+				},
+				{
+					name: 'Gustavsberg',
+					img:
+						'https://files.solvecms.com/test/7311e68/c88dade3-a904-483b-b086-339c9f41072f.jpg?v=1570713929768',
+					url: 'https://www.gustavsberg.com/no/',
+				},
+				{
+					name: 'Hafa Bathroom Group',
+					img:
+						'https://files.solvecms.com/test/7311e68/Hafa%20(1).jpg?v=1570714671965',
+					url: 'https://www.hafabg.com/',
+				},
+				{
+					name: 'Ifö',
+					img:
+						'https://files.solvecms.com/test/7311e68/25cd197e-6ffc-480a-9132-d41796ac67de.jpg?v=1570714034070',
+					url: 'https://www.ifosanitar.no/',
+				},
+				{
+					name: 'Korsbakken',
+					img:
+						'https://files.solvecms.com/test/7311e68/korsbakken-liten.jpg?v=1579080391175',
+					url: 'https://www.korsbakken.no/',
+				},
+				{
+					name: 'Linnbad',
+					img:
+						'https://files.solvecms.com/test/7311e68/Linn-bad-ny%20(1).jpg?v=1570785322250',
+					url: 'https://www.linnbad.no/',
+				},
+				{
+					name: 'Porsgrund',
+					img:
+						'https://files.solvecms.com/test/7311e68/b86aafe4-f9c2-4176-a5be-4eb4154293b9%20(1).jpg?v=1570785377468',
+					url: 'https://www.porsgrundbad.no/',
+				},
+				{
+					name: 'Villeroy & Boch',
+					img:
+						'https://files.solvecms.com/test/7311e68/Villeroy-&-Boch.jpg?v=1570713517506',
+					url:
+						'https://pro.villeroy-boch.com/en/no/bathroom-and-wellness/products/bathroom-collections.html',
+				},
+				{
+					name: 'INR',
+					img:
+						'https://files.solvecms.com/test/7311e68/INR-weblogo%20(1).jpg?v=1570785464880',
+					url: 'https://www.inr.no/',
+				},
+				{
+					name: 'Optima Bad',
+					img:
+						'https://files.solvecms.com/test/7311e68/Optima-bad%20(1).jpg?v=1570785484990',
+					url: 'http://www.optima-bad.no/',
+				},
+				{
+					name: 'Svedbergs',
+					img:
+						'https://files.solvecms.com/test/7311e68/svedbergs-logo-liten2.jpg?v=1579083400006',
+					url: 'http://www.svedbergs.no/',
+				},
+				{
+					name: 'Macro Design',
+					img:
+						'https://files.solvecms.com/test/7311e68/md_logo.png?v=1570785051097',
+					url: 'https://www.macrodesign.no/',
+				},
+				{
+					name: 'Scala Bad',
+					img:
+						'https://files.solvecms.com/test/7311e68/e9ef70d2-6a3c-4ce8-8894-9a335c8e62d1.jpg?v=1570714599981',
+					url: 'https://scalabad.wordpress.com/',
+				},
+				{
+					name: 'Bergersen Flis',
+					img:
+						'https://files.solvecms.com/test/7311e68/Bergersen-Flis%20(1).jpg?v=1570785604060',
+					url: 'https://www.bergersenflis.no',
+				},
+				{
+					name: 'Coram',
+					img:
+						'https://files.solvecms.com/test/7311e68/Coram%20Nordic%20logo-liten.jpg?v=1579609928224',
+					url: 'https://www.coram.no',
+				},
+				{
+					name: 'Holtan Normark',
+					img:
+						'https://files.solvecms.com/test/7311e68/Holtan-Normark-logo-liten.jpg?v=1579080833203',
+					url: 'http://holtannormark.no/',
+				},
+			],
+		},
+		{
+			categoryName: 'Baderomstilbehør',
+			items: [
+				{
+					name: 'Duravit',
+					img:
+						'https://files.solvecms.com/test/7311e68/duravit.png?v=1579082271072',
+					url: 'http://www.duravit.no/',
+				},
+				{
+					name: 'Korsbakken',
+					img:
+						'https://files.solvecms.com/test/7311e68/korsbakken-liten.jpg?v=1579080391175',
+					url: 'https://www.korsbakken.no/',
+				},
+				{
+					name: 'Vedum',
+					img:
+						'https://files.solvecms.com/test/7311e68/Vedum.png?v=1578473551120',
+					url: 'https://www.vedum.no/',
+				},
+				{
+					name: 'Scala Bad',
+					img:
+						'https://files.solvecms.com/test/7311e68/e9ef70d2-6a3c-4ce8-8894-9a335c8e62d1.jpg?v=1570714599981',
+					url: 'https://scalabad.wordpress.com/',
+				},
+				{
+					name: 'Axor',
+					img:
+						'https://files.solvecms.com/test/7311e68/axor-logo1.svg?v=1579083594677',
+					url: 'https://www.axor-design.com/en-int/index.html',
+				},
+				{
+					name: 'Pressalit',
+					img:
+						'https://files.solvecms.com/test/7311e68/Pressalit.svg?v=1579012371983',
+					url: 'https://pressalit.com/da-no/',
+				},
+				{
+					name: 'Coram',
+					img:
+						'https://files.solvecms.com/test/7311e68/Coram%20Nordic%20logo-liten.jpg?v=1579609928224',
+					url: 'https://www.coram.no',
+				},
+				{
+					name: 'Grohe',
+					img:
+						'https://files.solvecms.com/test/7311e68/67431a79-9c44-4d15-9fce-41014a360e82.jpg?v=1570791680611',
+					url: 'https://www.grohe.no/no_no/baderom/ceramics/',
+				},
+				{
+					name: 'Foss Fabrikker',
+					img:
+						'https://files.solvecms.com/test/7311e68/foss-fabrikker.svg?v=1578318589074',
+					url: 'https://www.fossfabrikker.no/',
+				},
+				{
+					name: 'Smedbo',
+					img:
+						'https://files.solvecms.com/test/7311e68/Smedbo.jpg?v=1570785794476',
+					url: 'https://www.smedbo.no/',
+				},
+				{
+					name: 'Boco Europe AS',
+					img:
+						'https://files.solvecms.com/test/7311e68/Boco-liten.jpg?v=1579012353174',
+					url: 'https://www.boco.no/',
+				},
+				{
+					name: 'Svedbergs',
+					img:
+						'https://files.solvecms.com/test/7311e68/svedbergs-logo-liten2.jpg?v=1579083400006',
+					url: 'http://www.svedbergs.no/',
+				},
+				{
+					name: 'Tapwell',
+					img:
+						'https://files.solvecms.com/test/7311e68/tapwell-logo2.svg?v=1579083049849',
+					url: 'https://www.tapwell.no',
+				},
+				{
+					name: 'Macro Design',
+					img:
+						'https://files.solvecms.com/test/7311e68/md_logo.png?v=1570785051097',
+					url: 'https://www.macrodesign.no/',
+				},
+				{
+					name: 'T. M. Christensen',
+					img:
+						'https://files.solvecms.com/test/7311e68/TM-Christensen2.jpg?v=1570790217528',
+					url: 'https://www.tmcvvs.no/',
+				},
+				{
+					name: 'Holtan Normark',
+					img:
+						'https://files.solvecms.com/test/7311e68/Holtan-Normark-logo-liten.jpg?v=1579080833203',
+					url: 'http://holtannormark.no/',
+				},
+				{
+					name: 'Vikingbad',
+					img:
+						'https://files.solvecms.com/test/7311e68/vikingbad-logo.svg?v=1579608865908',
+					url: 'http://vikingbad.no',
+				},
+			],
+		},
+		{
+			categoryName: 'Dusjvegger og dusjkabinett',
+			items: [
+				{
+					name: 'Laufen',
+					img:
+						'https://files.solvecms.com/test/7311e68/logo_laufen_standard.png?v=1570713703384',
+					url: 'https://www.laufen.no/',
+				},
+				{
+					name: 'Villeroy & Boch',
+					img:
+						'https://files.solvecms.com/test/7311e68/Villeroy-&-Boch.jpg?v=1570713517506',
+					url:
+						'https://pro.villeroy-boch.com/en/no/bathroom-and-wellness/products/bathroom-collections.html',
+				},
+				{
+					name: 'Bergersen Flis',
+					img:
+						'https://files.solvecms.com/test/7311e68/Bergersen-Flis%20(1).jpg?v=1570785604060',
+					url: 'https://www.bergersenflis.no/dusjer--vvs',
+				},
+				{
+					name: 'Gustavsberg',
+					img:
+						'https://files.solvecms.com/test/7311e68/c88dade3-a904-483b-b086-339c9f41072f.jpg?v=1570713929768',
+					url: 'https://www.gustavsberg.com/no/',
+				},
+				{
+					name: 'Korsbakken',
+					img:
+						'https://files.solvecms.com/test/7311e68/korsbakken-liten.jpg?v=1579080391175',
+					url: 'https://www.korsbakken.no/',
+				},
+				{
+					name: 'Boco Europe AS',
+					img:
+						'https://files.solvecms.com/test/7311e68/Boco-liten.jpg?v=1579012353174',
+					url: 'https://www.boco.no/',
+				},
+				{
+					name: 'Ifö',
+					img:
+						'https://files.solvecms.com/test/7311e68/25cd197e-6ffc-480a-9132-d41796ac67de.jpg?v=1570714034070',
+					url: 'https://www.ifosanitar.no/',
+				},
+				{
+					name: 'INR',
+					img:
+						'https://files.solvecms.com/test/7311e68/INR-weblogo%20(1).jpg?v=1570785464880',
+					url: 'https://www.inr.no/',
+				},
+				{
+					name: 'Porsgrund',
+					img:
+						'https://files.solvecms.com/test/7311e68/porsgrund-logo2.jpg?v=1579082719844',
+					url: 'http://www.porsgrundbad.no/',
+				},
+				{
+					name: 'Vikingbad',
+					img:
+						'https://files.solvecms.com/test/7311e68/vikingbad-logo.svg?v=1579608865908',
+					url: 'https://www.vikingbad.no/',
+				},
+				{
+					name: 'Macro Design',
+					img:
+						'https://files.solvecms.com/test/7311e68/md_logo.png?v=1570785051097',
+					url: 'https://www.macrodesign.no/',
+				},
+				{
+					name: 'Duscholux',
+					img:
+						'https://files.solvecms.com/test/7311e68/duscholux_logo_dark.jpg?v=1570714599609',
+					url: 'https://www.duscholux.com/no/Landing-Page/',
+				},
+				{
+					name: 'Svedbergs',
+					img:
+						'https://files.solvecms.com/test/7311e68/svedbergs-logo-liten2.jpg?v=1579083400006',
+					url: 'http://www.svedbergs.no/',
+				},
+				{
+					name: 'Novellini',
+					img:
+						'https://files.solvecms.com/test/7311e68/b0b8b0ba-e9db-4772-9195-2ab1673492d9.jpg?v=1570791181172',
+					url: 'https://www.holtannormark.no/merkevare/novellini/',
+				},
+				{
+					name: 'Coram',
+					img:
+						'https://files.solvecms.com/test/7311e68/Coram%20Nordic%20logo-liten.jpg?v=1579609928224',
+					url: 'https://www.coram.no',
+				},
+				{
+					name: 'Scala Bad',
+					img:
+						'https://files.solvecms.com/test/7311e68/e9ef70d2-6a3c-4ce8-8894-9a335c8e62d1.jpg?v=1570714599981',
+					url: 'https://scalabad.wordpress.com/',
+				},
+				{
+					name: 'Hafa Bathroom Group',
+					img:
+						'https://files.solvecms.com/test/7311e68/Hafa%20(1).jpg?v=1570714671965',
+					url: 'https://www.hafabg.com/',
+				},
+				{
+					name: 'Sanipro',
+					img:
+						'https://files.solvecms.com/test/7311e68/sanipro-logo.jpg?v=1579083132293',
+					url: 'https://www.sanipro.no/',
+				},
+			],
+		},
+		{
+			categoryName: 'Gulvvarme og radiatorer',
+			items: [
+				{
+					name: 'Armaturjonsson',
+					img:
+						'https://files.solvecms.com/test/7311e68/armaturjonsson-liten.jpg?v=1579080641971',
+					url: 'https://www.armaturjonsson.no/Produkter',
+				},
+				{
+					name: 'Høiax',
+					img:
+						'https://files.solvecms.com/test/7311e68/H%C3%B8iax%20(1).jpg?v=1570791318185',
+					url: 'https://www.hoiax.no/',
+				},
+				{
+					name: 'LK Systems',
+					img:
+						'https://files.solvecms.com/test/7311e68/lk%20systems-logo2.svg?v=1579083946400',
+					url: 'https://www.lksystems.no/no/',
+				},
+				{
+					name: 'Norsk Wavin AS',
+					img:
+						'https://files.solvecms.com/test/7311e68/wavin-logo.svg?v=1579081980521',
+					url: 'https://www.wavin.com/nn-no',
+				},
+				{
+					name: 'Roth Norge',
+					img:
+						'https://files.solvecms.com/test/7311e68/acebf2b6-25f0-43ad-92aa-62e1565cf9b7.jpg?v=1570791318060',
+					url: 'http://www.roth-nordic.no/no/',
+				},
+				{
+					name: 'Uponor',
+					img:
+						'https://files.solvecms.com/test/7311e68/uponor-logo2.svg?v=1579083732561',
+					url: 'https://www.uponor.no/',
+				},
+				{
+					name: 'Canes',
+					img:
+						'https://files.solvecms.com/test/7311e68/45814e66-857a-472f-bf9a-426bce0cf1dc.jpg?v=1570791317417',
+					url: 'https://www.canes.no/',
+				},
+				{
+					name: 'Cimberio',
+					img:
+						'https://files.solvecms.com/test/7311e68/cimberio-norge.png?v=1570799281954',
+					url: 'https://www.cimberio.no/',
+				},
+				{
+					name: 'Tece',
+					img:
+						'https://files.solvecms.com/test/7311e68/logo_tece_rgb_ohneClaim.svg?v=1570793405968',
+					url: 'https://www.tece.com/no',
+				},
+				{
+					name: 'Varmesystemer',
+					img:
+						'https://files.solvecms.com/test/7311e68/Varmesystemer-logo2.svg?v=1579098461683',
+					url: 'http://varmesystemer.no/',
+				},
+			],
+		},
+		{
+			categoryName: 'Toaletter, seter og innbyggingsrammer',
+			items: [
+				{
+					name: 'Laufen',
+					img:
+						'https://files.solvecms.com/test/7311e68/logo_laufen_standard.png?v=1570713703384',
+					url: 'https://www.laufen.no/',
+				},
+				{
+					name: 'Coram',
+					img:
+						'https://files.solvecms.com/test/7311e68/Coram%20Nordic%20logo-liten.jpg?v=1579609928224',
+					url: 'https://www.coram.no',
+				},
+				{
+					name: 'Hafa Bathroom Group',
+					img:
+						'https://files.solvecms.com/test/7311e68/Hafa%20(1).jpg?v=1570714671965',
+					url: 'https://www.hafabg.com/',
+				},
+				{
+					name: 'Gustavsberg',
+					img:
+						'https://files.solvecms.com/test/7311e68/c88dade3-a904-483b-b086-339c9f41072f.jpg?v=1570713929768',
+					url: 'https://www.gustavsberg.com/no/',
+				},
+				{
+					name: 'O. Berge',
+					img:
+						'https://files.solvecms.com/test/7311e68/logo%20(3).png?v=1579082339219',
+					url: 'https://www.oberge.no/',
+				},
+				{
+					name: 'Geberit',
+					img:
+						'https://files.solvecms.com/test/7311e68/geberit-logo.svg?v=1570791641899',
+					url: 'https://www.geberit.no/no/',
+				},
+				{
+					name: 'Boco Europe AS',
+					img:
+						'https://files.solvecms.com/test/7311e68/Boco-liten.jpg?v=1579012353174',
+					url: 'https://www.boco.no/',
+				},
+				{
+					name: 'Grohe',
+					img:
+						'https://files.solvecms.com/test/7311e68/67431a79-9c44-4d15-9fce-41014a360e82.jpg?v=1570791680611',
+					url: 'https://www.grohe.no/no_no/baderom/ceramics/',
+				},
+				{
+					name: 'Ifö',
+					img:
+						'https://files.solvecms.com/test/7311e68/25cd197e-6ffc-480a-9132-d41796ac67de.jpg?v=1570714034070',
+					url: 'https://www.ifosanitar.no/',
+				},
+				{
+					name: 'Korsbakken',
+					img:
+						'https://files.solvecms.com/test/7311e68/korsbakken-liten.jpg?v=1579080391175',
+					url: 'https://www.korsbakken.no/',
+				},
+				{
+					name: 'Porsgrund',
+					img:
+						'https://files.solvecms.com/test/7311e68/porsgrund-logo2.jpg?v=1579082719844',
+					url: 'http://www.porsgrundbad.no/',
+				},
+				{
+					name: 'Pressalit',
+					img:
+						'https://files.solvecms.com/test/7311e68/Pressalit.svg?v=1579012371983',
+					url: 'https://pressalit.com/da-no/',
+				},
+				{
+					name: 'Villeroy & Boch',
+					img:
+						'https://files.solvecms.com/test/7311e68/Villeroy-&-Boch.jpg?v=1570713517506',
+					url:
+						'https://pro.villeroy-boch.com/en/no/bathroom-and-wellness/products/bathroom-collections.html',
+				},
+				{
+					name: 'Duravit',
+					img:
+						'https://files.solvecms.com/test/7311e68/duravit.png?v=1579082271072',
+					url: 'http://www.duravit.no/',
+				},
+				{
+					name: 'Tece',
+					img:
+						'https://files.solvecms.com/test/7311e68/logo_tece_rgb_ohneClaim.svg?v=1570793405968',
+					url: 'https://www.tece.com/no',
+				},
+				{
+					name: 'Holtan Normark',
+					img:
+						'https://files.solvecms.com/test/7311e68/Holtan-Normark-logo-liten.jpg?v=1579080833203',
+					url: 'http://holtannormark.no/',
+				},
+				{
+					name: 'Svedbergs',
+					img:
+						'https://files.solvecms.com/test/7311e68/svedbergs-logo-liten2.jpg?v=1579083400006',
+					url: 'http://www.svedbergs.no/',
+				},
+				{
+					name: 'Vikingbad',
+					img:
+						'https://files.solvecms.com/test/7311e68/vikingbad-logo.svg?v=1579608865908',
+					url: 'http://vikingbad.no',
+				},
+			],
+		},
+		{
+			categoryName: 'Kraner og armaturer',
+			items: [
+				{
+					name: 'Korsbakken',
+					img:
+						'https://files.solvecms.com/test/7311e68/korsbakken-liten.jpg?v=1579080391175',
+					url: 'https://www.korsbakken.no/',
+				},
+				{
+					name: 'Sanipro',
+					img:
+						'https://files.solvecms.com/test/7311e68/sanipro-logo.jpg?v=1579083132293',
+					url: 'https://www.sanipro.no/',
+				},
+				{
+					name: 'Axor',
+					img:
+						'https://files.solvecms.com/test/7311e68/axor-logo1.svg?v=1579083594677',
+					url: 'https://www.axor-design.com/en-int/index.html',
+				},
+				{
+					name: 'Grohe',
+					img:
+						'https://files.solvecms.com/test/7311e68/67431a79-9c44-4d15-9fce-41014a360e82.jpg?v=1570791680611',
+					url:
+						'https://www.grohe.no/no_no/baderom/baderomsarmaturer/vask.html',
+				},
+				{
+					name: 'Gustavsberg',
+					img:
+						'https://files.solvecms.com/test/7311e68/c88dade3-a904-483b-b086-339c9f41072f.jpg?v=1570713929768',
+					url: 'https://www.gustavsberg.com/no/',
+				},
+				{
+					name: 'Boco Europe AS',
+					img:
+						'https://files.solvecms.com/test/7311e68/Boco-liten.jpg?v=1579012353174',
+					url: 'https://www.boco.no/',
+				},
+				{
+					name: 'Hansgrohe',
+					img:
+						'https://files.solvecms.com/test/7311e68/Hansgrohe-Logo-2.svg?v=1570792434114',
+					url: 'https://www.hansgrohe.no/',
+				},
+				{
+					name: 'INR',
+					img:
+						'https://files.solvecms.com/test/7311e68/INR-weblogo%20(1).jpg?v=1570785464880',
+					url: 'https://www.inr.no/',
+				},
+				{
+					name: 'Svedbergs',
+					img:
+						'https://files.solvecms.com/test/7311e68/svedbergs-logo-liten2.jpg?v=1579083400006',
+					url: 'http://www.svedbergs.no/',
+				},
+				{
+					name: 'Oras',
+					img:
+						'https://files.solvecms.com/test/7311e68/oras.svg?v=1570792525307',
+					url: 'https://www.oras.com/no/hjem/',
+				},
+				{
+					name: 'Laufen',
+					img:
+						'https://files.solvecms.com/test/7311e68/logo_laufen_standard.png?v=1570713703384',
+					url: 'https://www.laufen.no/',
+				},
+				{
+					name: 'FM Mattsson',
+					img:
+						'https://files.solvecms.com/test/7311e68/logo-header-ostnor.png?v=1570792603033',
+					url: 'https://www.fmm-mora.com/sv/',
+				},
+				{
+					name: 'Tapwell',
+					img:
+						'https://files.solvecms.com/test/7311e68/tapwell-logo2.svg?v=1579083049849',
+					url: 'https://www.tapwell.no',
+				},
+				{
+					name: 'Vikingbad',
+					img:
+						'https://files.solvecms.com/test/7311e68/vikingbad-logo.svg?v=1579608865908',
+					url: 'https://www.vikingbad.no/',
+				},
+				{
+					name: 'Hafa Bathroom Group',
+					img:
+						'https://files.solvecms.com/test/7311e68/Hafa%20(1).jpg?v=1570714671965',
+					url: 'https://www.hafabg.com/',
+				},
+				{
+					name: 'Vedum',
+					img:
+						'https://files.solvecms.com/test/7311e68/Vedum.png?v=1578473551120',
+					url: 'https://www.vedum.no/',
+				},
+				{
+					name: 'Tece',
+					img:
+						'https://files.solvecms.com/test/7311e68/logo_tece_rgb_ohneClaim.svg?v=1570793405968',
+					url: 'https://www.tece.com/no',
+				},
+			],
+		},
+		{
+			categoryName: 'Pumper, kule- og reguleringsventiler',
+			items: [
+				{
+					name: 'Vedum',
+					img:
+						'https://files.solvecms.com/test/7311e68/Vedum.png?v=1578473551120',
+					url: 'https://www.vedum.no/',
+				},
+				{
+					name: 'O. Berge',
+					img:
+						'https://files.solvecms.com/test/7311e68/logo%20(3).png?v=1579082339219',
+					url: 'https://www.oberge.no/',
+				},
+				{
+					name: 'Wilo',
+					img:
+						'https://files.solvecms.com/test/7311e68/Wilo.jpg?v=1570792742586',
+					url: 'https://wilo.com/no/no/',
+				},
+				{
+					name: 'E.M.S. Teknikk',
+					img:
+						'https://files.solvecms.com/test/7311e68/EMS.jpg?v=1570792742123',
+					url: 'https://www.ems.no/',
+				},
+				{
+					name: 'Cimberio',
+					img:
+						'https://files.solvecms.com/test/7311e68/cimberio-norge.png?v=1570799281954',
+					url: 'https://www.cimberio.no/',
+				},
+				{
+					name: 'Grundfos',
+					img:
+						'https://files.solvecms.com/test/7311e68/grundfos1.svg?v=1579082535268',
+					url: 'https://no.grundfos.com/products.html',
+				},
+				{
+					name: 'Xylem',
+					img:
+						'https://files.solvecms.com/test/7311e68/xylem-logo2.svg?v=1579081474277',
+					url: 'https://www.xylem.com/nb-no/',
+				},
+				{
+					name: 'Roth Norge',
+					img:
+						'https://files.solvecms.com/test/7311e68/acebf2b6-25f0-43ad-92aa-62e1565cf9b7.jpg?v=1570791318060',
+					url: 'http://www.roth-nordic.no/no/',
+				},
+				{
+					name: 'KSB',
+					img:
+						'https://files.solvecms.com/test/7311e68/6a0ba05d-d9c1-494e-b6b4-47d1f928ec9a.jpg?v=1570792742117',
+					url: 'https://www.ksb.com/ksb-no/',
+				},
+				{
+					name: 'Varmesystemer',
+					img:
+						'https://files.solvecms.com/test/7311e68/Varmesystemer-logo2.svg?v=1579098461683',
+					url: 'http://varmesystemer.no/',
+				},
+			],
+		},
+		{
+			categoryName: 'Rørsystemer og VA',
+			items: [
+				{
+					name: 'Armaturjonsson',
+					img:
+						'https://files.solvecms.com/test/7311e68/armaturjonsson-liten.jpg?v=1579080641971',
+					url: 'https://www.armaturjonsson.no/Produkter',
+				},
+				{
+					name: 'Geberit',
+					img:
+						'https://files.solvecms.com/test/7311e68/geberit-logo.svg?v=1570791641899',
+					url: 'https://www.geberit.no/no/',
+				},
+				{
+					name: 'Uponor',
+					img:
+						'https://files.solvecms.com/test/7311e68/uponor-logo2.svg?v=1579083732561',
+					url: 'https://www.uponor.no/',
+				},
+				{
+					name: 'Pipelife',
+					img:
+						'https://files.solvecms.com/test/7311e68/pipelife-logo.jpg?v=1570793274791',
+					url:
+						'https://www.pipelife.no/no/produkter/oversiktside-produkter.php',
+				},
+				{
+					name: 'Kruge',
+					img:
+						'https://files.solvecms.com/test/7311e68/logo%20(2).png?v=1570800036012',
+					url: 'https://www.kruge.no/',
+				},
+				{
+					name: 'Norsk Wavin AS',
+					img:
+						'https://files.solvecms.com/test/7311e68/wavin-logo.svg?v=1579081980521',
+					url: 'https://www.wavin.com/nn-no',
+				},
+				{
+					name: 'LK Systems',
+					img:
+						'https://files.solvecms.com/test/7311e68/lk%20systems-logo2.svg?v=1579083946400',
+					url: 'https://www.lksystems.no/no/',
+				},
+				{
+					name: 'Isiflo',
+					img:
+						'https://files.solvecms.com/test/7311e68/isiflo%20(2).jpg?v=1570793572641',
+					url: 'https://isiflo.no/',
+				},
+				{
+					name: 'BB Produkter VVA',
+					img:
+						'https://files.solvecms.com/test/7311e68/bb%20produkter%20logo.png?v=1570793622015',
+					url: 'https://bbprodukter.no/',
+				},
+				{
+					name: 'Høiax',
+					img:
+						'https://files.solvecms.com/test/7311e68/H%C3%B8iax%20(1).jpg?v=1570791318185',
+					url: 'https://www.hoiax.no/',
+				},
+				{
+					name: 'Lyngen Tank',
+					img:
+						'https://files.solvecms.com/test/7311e68/HeaderLogo.png?v=1570796052926',
+					url: 'https://lyngentank.no/',
+				},
+				{
+					name: 'Roth Norge',
+					img:
+						'https://files.solvecms.com/test/7311e68/acebf2b6-25f0-43ad-92aa-62e1565cf9b7.jpg?v=1570791318060',
+					url: 'http://www.roth-nordic.no/no/',
+				},
+				{
+					name: 'Varmesystemer',
+					img:
+						'https://files.solvecms.com/test/7311e68/Varmesystemer-logo2.svg?v=1579098461683',
+					url: 'http://varmesystemer.no/',
+				},
+				{
+					name: 'Tece',
+					img:
+						'https://files.solvecms.com/test/7311e68/logo_tece_rgb_ohneClaim.svg?v=1570793405968',
+					url: 'https://www.tece.com/no',
+				},
+			],
+		},
+		{
+			categoryName: 'Sluk',
+			items: [
+				{
+					name: 'Geberit',
+					img:
+						'https://files.solvecms.com/test/7311e68/geberit-logo.svg?v=1570791641899',
+					url: 'https://www.geberit.no/no/',
+				},
+				{
+					name: 'O. Berge',
+					img:
+						'https://files.solvecms.com/test/7311e68/logo%20(3).png?v=1579082339219',
+					url: 'https://www.oberge.no/',
+				},
+				{
+					name: 'Purus',
+					img:
+						'https://files.solvecms.com/test/7311e68/puris.svg?v=1570796177083',
+					url: 'https://www.purus.no/',
+				},
+				{
+					name: 'Unidrain (BLS Norge)',
+					img:
+						'https://files.solvecms.com/test/7311e68/unidrain-liten2.jpg?v=1579082823553',
+					url: 'https://www.unidrain.no/',
+				},
+				{
+					name: 'Tece',
+					img:
+						'https://files.solvecms.com/test/7311e68/logo_tece_rgb_ohneClaim.svg?v=1570793405968',
+					url: 'https://www.tece.com/no',
+				},
+				{
+					name: 'Pipelife',
+					img:
+						'https://files.solvecms.com/test/7311e68/pipelife-logo.jpg?v=1570793274791',
+					url:
+						'https://www.pipelife.no/no/produkter/oversiktside-produkter.php',
+				},
+			],
+		},
+		{
+			categoryName: 'Servanter',
+			items: [
+				{
+					name: 'Gustavsberg',
+					img:
+						'https://files.solvecms.com/test/7311e68/c88dade3-a904-483b-b086-339c9f41072f.jpg?v=1570713929768',
+					url: 'https://www.gustavsberg.com/no/',
+				},
+				{
+					name: 'Grohe',
+					img:
+						'https://files.solvecms.com/test/7311e68/67431a79-9c44-4d15-9fce-41014a360e82.jpg?v=1570791680611',
+					url:
+						'https://www.grohe.no/no_no/baderom/baderomsarmaturer/vask.html',
+				},
+				{
+					name: 'Hansgrohe',
+					img:
+						'https://files.solvecms.com/test/7311e68/Hansgrohe-Logo-2.svg?v=1570792434114',
+					url: 'https://www.hansgrohe.no/',
+				},
+				{
+					name: 'Vedum',
+					img:
+						'https://files.solvecms.com/test/7311e68/Vedum.png?v=1578473551120',
+					url: 'https://www.vedum.no/',
+				},
+				{
+					name: 'Intra',
+					img:
+						'https://files.solvecms.com/test/7311e68/intra-logo2-min.png?v=1570796540615',
+					url: 'https://www.intra-teka.com/norsk',
+				},
+				{
+					name: 'Ifö',
+					img:
+						'https://files.solvecms.com/test/7311e68/25cd197e-6ffc-480a-9132-d41796ac67de.jpg?v=1570714034070',
+					url: 'https://www.ifosanitar.no/',
+				},
+				{
+					name: 'Korsbakken',
+					img:
+						'https://files.solvecms.com/test/7311e68/korsbakken-liten.jpg?v=1579080391175',
+					url: 'https://www.korsbakken.no/',
+				},
+				{
+					name: 'Porsgrund',
+					img:
+						'https://files.solvecms.com/test/7311e68/porsgrund-logo2.jpg?v=1579082719844',
+					url: 'http://www.porsgrundbad.no/',
+				},
+				{
+					name: 'Villeroy & Boch',
+					img:
+						'https://files.solvecms.com/test/7311e68/Villeroy-&-Boch.jpg?v=1570713517506',
+					url:
+						'https://pro.villeroy-boch.com/en/no/bathroom-and-wellness/products/bathroom-collections.html',
+				},
+				{
+					name: 'Laufen',
+					img:
+						'https://files.solvecms.com/test/7311e68/logo_laufen_standard.png?v=1570713703384',
+					url: 'https://www.laufen.no/',
+				},
+				{
+					name: 'Vikingbad',
+					img:
+						'https://files.solvecms.com/test/7311e68/vikingbad-logo.svg?v=1579608865908',
+					url: 'https://www.vikingbad.no',
+				},
+				{
+					name: 'Hafa Bathroom Group',
+					img:
+						'https://files.solvecms.com/test/7311e68/Hafa%20(1).jpg?v=1570714671965',
+					url: 'https://www.hafabg.com/',
+				},
+				{
+					name: 'Duravit',
+					img:
+						'https://files.solvecms.com/test/7311e68/duravit.png?v=1579082271072',
+					url: 'http://www.duravit.no/',
+				},
+				{
+					name: 'Svedbergs',
+					img:
+						'https://files.solvecms.com/test/7311e68/svedbergs-logo-liten2.jpg?v=1579083400006',
+					url: 'http://www.svedbergs.no/',
+				},
+				{
+					name: 'Axor',
+					img:
+						'https://files.solvecms.com/test/7311e68/axor-logo1.svg?v=1579083594677',
+					url: 'https://www.axor-design.com/en-int/index.html',
+				},
+				{
+					name: 'Scala Bad',
+					img:
+						'https://files.solvecms.com/test/7311e68/e9ef70d2-6a3c-4ce8-8894-9a335c8e62d1.jpg?v=1570714599981',
+					url: 'https://scalabad.wordpress.com/',
+				},
+				{
+					name: 'Sanipro',
+					img:
+						'https://files.solvecms.com/test/7311e68/sanipro-logo.jpg?v=1579083132293',
+					url: 'https://www.sanipro.no/',
+				},
+				{
+					name: 'Holtan Normark',
+					img:
+						'https://files.solvecms.com/test/7311e68/Holtan-Normark-logo-liten.jpg?v=1579080833203',
+					url: 'http://holtannormark.no/',
+				},
+			],
+		},
+		{
+			categoryName: 'Lekkasjesikring',
+			items: [
+				{
+					name: 'O. Berge',
+					img:
+						'https://files.solvecms.com/test/7311e68/logo%20(3).png?v=1579082339219',
+					url: 'https://www.oberge.no/',
+				},
+				{
+					name: 'Grohe',
+					img:
+						'https://files.solvecms.com/test/7311e68/67431a79-9c44-4d15-9fce-41014a360e82.jpg?v=1570791680611',
+					url:
+						'https://www.grohe.no/no_no/baderom/baderomsarmaturer/vask.html',
+				},
+				{
+					name: 'Waterguard',
+					img:
+						'https://files.solvecms.com/test/7311e68/Waterguar_LOGO_pos.png?v=1570796868599',
+					url: 'http://waterguard.no/',
+				},
+				{
+					name: 'Høiax',
+					img:
+						'https://files.solvecms.com/test/7311e68/H%C3%B8iax%20(1).jpg?v=1570791318185',
+					url: 'https://www.hoiax.no/',
+				},
+				{
+					name: 'Armaturjonsson',
+					img:
+						'https://files.solvecms.com/test/7311e68/armaturjonsson-liten.jpg?v=1579080641971',
+					url: 'https://www.armaturjonsson.no/Produkter',
+				},
+				{
+					name: 'Watercontrol',
+					img:
+						'https://files.solvecms.com/test/7311e68/watercontrolas1.jpg?v=1579082099184',
+					url: 'https://www.watercontrol.no/',
+				},
+				{
+					name: 'Varmesystemer',
+					img:
+						'https://files.solvecms.com/test/7311e68/Varmesystemer-logo2.svg?v=1579098461683',
+					url: 'http://varmesystemer.no/',
+				},
+				{
+					name: 'Tece',
+					img:
+						'https://files.solvecms.com/test/7311e68/logo_tece_rgb_ohneClaim.svg?v=1570793405968',
+					url: 'https://www.tece.com/no',
+				},
+			],
+		},
+		{
+			categoryName: 'Varmepumper, kjeler og brennere',
+			items: [
+				{
+					name: 'Vaillant',
+					img:
+						'https://files.solvecms.com/test/7311e68/Vaillant.jpg?v=1570797037231',
+					url: 'https://www.vaillant.no/privatkunder/',
+				},
+				{
+					name: 'CTC',
+					img:
+						'https://files.solvecms.com/test/7311e68/ctc-logo.jpg?v=1570797167616',
+					url: 'http://ctc.no/',
+				},
+				{
+					name: 'ABK-Qviller',
+					img:
+						'https://files.solvecms.com/test/7311e68/abk-qviller-logo%20(1).jpg?v=1570797242026',
+					url: 'https://www.abkqviller.no/',
+				},
+				{
+					name: 'Roth Norge',
+					img:
+						'https://files.solvecms.com/test/7311e68/acebf2b6-25f0-43ad-92aa-62e1565cf9b7.jpg?v=1570791318060',
+					url: 'http://www.roth-nordic.no/no/',
+				},
+				{
+					name: 'Høiax',
+					img:
+						'https://files.solvecms.com/test/7311e68/H%C3%B8iax%20(1).jpg?v=1570791318185',
+					url:
+						'https://www.hoiax.no/produkter/varmepumper/varmepumper',
+				},
+				{
+					name: 'Toshiba Varmepumper',
+					img:
+						'https://files.solvecms.com/test/7311e68/toshiba-logo.jpg?v=1570797616736',
+					url: 'https://www.toshibavarmepumper.no/',
+				},
+				{
+					name: 'Bosch',
+					img:
+						'https://files.solvecms.com/test/7311e68/logo-bosch-liten.jpg?v=1579080967755',
+					url:
+						'https://www.bosch-climate.no/produkter/oversikt-produkter/',
+				},
+				{
+					name: 'SGP',
+					img:
+						'https://files.solvecms.com/test/7311e68/SGP-Armatec-oval-gr%C3%B8nn%20(1).png?v=1570797944339',
+					url: 'https://sgp.no/',
+				},
+				{
+					name: 'Nibe',
+					img:
+						'https://files.solvecms.com/test/7311e68/nibe%20logo.jpg?v=1570798031849',
+					url: 'https://www.nibe.no/',
+				},
+				{
+					name: 'Varmesystemer',
+					img:
+						'https://files.solvecms.com/test/7311e68/Varmesystemer-logo2.svg?v=1579098461683',
+					url: 'http://varmesystemer.no/',
+				},
+			],
+		},
+		{
+			categoryName: 'Vannrensing og pumper',
+			items: [
+				{
+					name: 'Canes',
+					img:
+						'https://files.solvecms.com/test/7311e68/45814e66-857a-472f-bf9a-426bce0cf1dc.jpg?v=1570791317417',
+					url: 'https://www.canes.no/',
+				},
+			],
+		},
+		{
+			categoryName: 'Varmtvannsbereder',
+			items: [
+				{
+					name: 'CTC',
+					img:
+						'https://files.solvecms.com/test/7311e68/ctc-logo.jpg?v=1570797167616',
+					url: 'http://ctc.no/',
+				},
+				{
+					name: 'Nibe',
+					img:
+						'https://files.solvecms.com/test/7311e68/nibe%20logo.jpg?v=1570798031849',
+					url: 'https://www.nibe.no/',
+				},
+				{
+					name: 'OSO Hotwater',
+					img:
+						'https://files.solvecms.com/test/7311e68/logo.png?v=1570798113686',
+					url: 'https://www.osohotwater.no/',
+				},
+				{
+					name: 'Høiax',
+					img:
+						'https://files.solvecms.com/test/7311e68/H%C3%B8iax%20(1).jpg?v=1570791318185',
+					url: 'https://www.hoiax.no/',
+				},
+			],
+		},
+		{
+			categoryName: 'Diverse produktleverandører',
+			items: [
+				{
+					name: 'Axor',
+					img:
+						'https://files.solvecms.com/test/7311e68/axor-logo1.svg?v=1579083594677',
+					url: 'https://www.axor-design.com/en-int/index.html',
+				},
+				{
+					name: 'Debe Norge',
+					img:
+						'https://files.solvecms.com/test/7311e68/Debe-logo-liten.jpg?v=1579610076220',
+					url: 'http://www.debenorge.no/',
+				},
+				{
+					name: 'O. Berge',
+					img:
+						'https://files.solvecms.com/test/7311e68/logo%20(3).png?v=1579082339219',
+					url: 'https://www.oberge.no/',
+				},
+				{
+					name: 'Vikingbad',
+					img:
+						'https://files.solvecms.com/test/7311e68/vikingbad-logo.svg?v=1579608865908',
+					url: 'https://www.vikingbad.no/',
+				},
+				{
+					name: 'Hansgrohe',
+					img:
+						'https://files.solvecms.com/test/7311e68/Hansgrohe-Logo-2.svg?v=1570792434114',
+					url: 'https://www.hansgrohe.no/',
+				},
+				{
+					name: 'Waterguard',
+					img:
+						'https://files.solvecms.com/test/7311e68/Waterguar_LOGO_pos.png?v=1570796868599',
+					url: 'http://waterguard.no/',
+				},
+				{
+					name: 'Hydroscand',
+					img:
+						'https://files.solvecms.com/test/7311e68/B3TL1N.png?v=1570798301148',
+					url: 'https://www.hydroscand.no/',
+				},
+				{
+					name: 'Kingspan',
+					img:
+						'https://files.solvecms.com/test/7311e68/kingspan-logo.svg?v=1570798335638',
+					url: 'https://www.kingspan.com/no/nb-no',
+				},
+				{
+					name: 'Relekta',
+					img:
+						'https://files.solvecms.com/test/7311e68/Relekta_logo.jpg?v=1570798410877',
+					url: 'https://www.relekta.no/',
+				},
+				{
+					name: 'Isiflo',
+					img:
+						'https://files.solvecms.com/test/7311e68/isiflo%20(2).jpg?v=1570793572641',
+					url: 'https://isiflo.no/',
+				},
+				{
+					name: 'IMI Hydronic Engineering',
+					img:
+						'https://files.solvecms.com/test/7311e68/imi-hydronic-logo.png?v=1570798530566',
+					url:
+						'https://www.imi-hydronic.com/sites/EN/nb-no/Pages/default.aspx',
+				},
+				{
+					name: 'Glava Isolasjon',
+					img:
+						'https://files.solvecms.com/test/7311e68/glava-logo.svg?v=1570798604004',
+					url: 'https://www.glava.no/',
+				},
+				{
+					name: 'Bergersen Flis',
+					img:
+						'https://files.solvecms.com/test/7311e68/Bergersen-Flis%20(1).jpg?v=1570785604060',
+					url: 'https://www.bergersenflis.no',
+				},
+				{
+					name: 'BWT',
+					img:
+						'https://files.solvecms.com/test/7311e68/BWT.svg?v=1570798674931',
+					url: 'https://www.bwt.com/no-no/',
+				},
+				{
+					name: 'Flisekompaniet',
+					img:
+						'https://files.solvecms.com/test/7311e68/flise.png?v=1570798714566',
+					url: 'https://www.flisekompaniet.no/',
+				},
+				{
+					name: 'Intra',
+					img:
+						'https://files.solvecms.com/test/7311e68/intra-logo2-min.png?v=1570796540615',
+					url: 'https://www.intra-teka.com/norsk',
+				},
+				{
+					name: 'Norsk Wavin AS',
+					img:
+						'https://files.solvecms.com/test/7311e68/wavin-logo.svg?v=1579081980521',
+					url: 'https://www.wavin.com/nn-no',
+				},
+				{
+					name: 'Litex',
+					img:
+						'https://files.solvecms.com/test/7311e68/Litex-liten.jpg?v=1579012353000',
+					url: 'https://www.litex.no/',
+				},
+				{
+					name: 'Motek',
+					img:
+						'https://files.solvecms.com/test/7311e68/motek2.jpg?v=1570798976084',
+					url: 'https://www.motek.no/',
+				},
+				{
+					name: 'Norenco',
+					img:
+						'https://files.solvecms.com/test/7311e68/norenco.jpg?v=1570799083744',
+					url: 'http://www.norenco.no/',
+				},
+				{
+					name: 'T. M. Christensen',
+					img:
+						'https://files.solvecms.com/test/7311e68/TM-Christensen2.jpg?v=1570790217528',
+					url: 'https://www.tmcvvs.no/',
+				},
+				{
+					name: 'Optimera',
+					img:
+						'https://files.solvecms.com/test/7311e68/optimera1.PNG?v=1570799170864',
+					url: 'https://www.optimera.no/',
+				},
+				{
+					name: 'Cimberio',
+					img:
+						'https://files.solvecms.com/test/7311e68/cimberio-norge.png?v=1570799281954',
+					url: 'https://www.cimberio.no/',
+				},
+				{
+					name: 'Noha',
+					img:
+						'https://files.solvecms.com/test/7311e68/noha.svg?v=1570799664705',
+					url: 'https://www.noha.no/',
+				},
+				{
+					name: 'Lyngen Tank',
+					img:
+						'https://files.solvecms.com/test/7311e68/HeaderLogo.png?v=1570796052926',
+					url: 'https://lyngentank.no/',
+				},
+				{
+					name: 'Kruge',
+					img:
+						'https://files.solvecms.com/test/7311e68/logo%20(2).png?v=1570800036012',
+					url: 'https://www.kruge.no/',
+				},
+				{
+					name: 'Smedbo',
+					img:
+						'https://files.solvecms.com/test/7311e68/Smedbo.jpg?v=1570785794476',
+					url: 'https://www.smedbo.no/',
+				},
+				{
+					name: 'Varmesystemer',
+					img:
+						'https://files.solvecms.com/test/7311e68/Varmesystemer-logo2.svg?v=1579098461683',
+					url: 'http://varmesystemer.no/',
+				},
+				{
+					name: 'Vedum',
+					img:
+						'https://files.solvecms.com/test/7311e68/Vedum.png?v=1578473551120',
+					url: 'https://www.vedum.no/',
+				},
+			],
+		},
+	]
+</script>
