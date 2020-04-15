@@ -117,7 +117,7 @@
 										class="img-anchor"
 									>
 										<img
-											:src="supplier.img"
+											:src="supplier.picture.width < 500 ? supplier.picture.original : supplier.picture.medium"
 											:alt="supplier.name + ' logo'"
 											loading="lazy"
 										/>

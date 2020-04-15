@@ -9,21 +9,12 @@ var suppliersVm = new Vue({
 		}
 	},
 	mounted: function () {
-		this.setKeys()
-		this.combineSuppliersInAll()
-
-		/* 
-		
-			Fjern kommentering her etter bildene ikke er så store
-			Fjern også koden over i denne funksjonen: this.setKeys() og this.combineSuppliersInAll()
-
-		*/
-		// var that = this
-		// $.getJSON('/forhandlerkategorier.json', function (data) {
-		// 	that.suppliers = data
-		// 	that.setKeys()
-		// 	that.combineSuppliersInAll()
-		// })
+		var that = this
+		$.getJSON('/forhandlerkategorier.json', function (data) {
+			that.suppliers = data
+			that.setKeys()
+			that.combineSuppliersInAll()
+		})
 	},
 	methods: {
 		setKeys: function () {
